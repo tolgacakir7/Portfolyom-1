@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tolga Çakır - Senior Front-End Developer</title>
+    <link rel="stylesheet" href="iletisim.css">
+    <link rel="shortcut icon" href="img/logo.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="banner" id="yan_menu">
+        <header>
+            <a href="index.html" class="logo">TOLGA ÇAKIR</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+    <div class="content">
+        <div class="contact-section">
+            <h1>Bana Ulaşın</h1>
+            <div class="border"></div>
+            <form class="contact-form" action="index.html"method="post">
+                <input type="text" class="contact-form-text" placeholder="Ad">
+                <input type="email" class="contact-form-text" placeholder="Email">
+                <input type="number" class="contact-form-text" placeholder="Telefon">
+                <textarea class="contact-form-text" placeholder="Mesaj"></textarea>
+                <input type="submit" class="contact-form-btn" value="Gönder">
+            </form>
+        </div>
+        <div class="map">       
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48219.39359026146!2d29.12043823399867!3d40.94397655983522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac4336e39827f%3A0x608e0ae971e8ddc2!2sMaltepe%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1600937604366!5m2!1str!2str" width="800px" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/profile.php?id=100008435432152" target="_blank"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/linkedin.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/tolgacakir.7"  target="_blank"><img src="img/instagram.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">ANASAYFA</a></li>
+            <li><a href="hakkimda.html">HAKKIMDA</a></li>
+            <li><a href="projeler.html">PROJELER</a></li>
+            <li><a href="iletisim.html">İLETİŞİM</a></li>
+            <li><a href="https://cvlogin.com/cv/tolgacakircv" target="_blank">CV</a></li>
+        </ul>
+    </div>
+    
+    <script type="text/javascript">
+    function toggle()
+    {
+        var yan_menu = document.getElementById('yan_menu');
+        var nav = document.getElementById('navigation');
+        yan_menu.classList.toggle('active')
+        nav.classList.toggle('active')
+    }</script>
+</body>
+</html>

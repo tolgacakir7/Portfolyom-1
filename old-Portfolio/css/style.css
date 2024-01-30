@@ -1,0 +1,258 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.sayfa-1 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: #56CCF2;
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+  background: -webkit-gradient(linear, left top, right top, from(#2F80ED), to(#56CCF2));
+  background: -webkit-linear-gradient(left, #2F80ED, #56CCF2);
+  background: -o-linear-gradient(left, #2F80ED, #56CCF2);
+  background: linear-gradient(to right, #2F80ED, #56CCF2); }
+  .sayfa-1 .name {
+    float: left;
+    width: 15%;
+    color: white;
+    position: absolute;
+    left: 20%;
+    font-size: 40px;
+    font-family: Lot; }
+  .sayfa-1 .menuarea {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 500px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    text-align: center; }
+    .sayfa-1 .menuarea a {
+      text-decoration: none;
+      margin: auto;
+      display: block;
+      color: black;
+      line-height: 50px;
+      font-family: Montserrat; }
+    .sayfa-1 .menuarea a:hover {
+      background-color: black;
+      color: white; }
+    .sayfa-1 .menuarea.active {
+      -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      transform: translateX(0%); }
+  .sayfa-1 .navbar {
+    width: 55px;
+    height: 60px;
+    float: right;
+    position: relative;
+    margin-top: 30px;
+    right: 200px;
+    cursor: pointer;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+    .sayfa-1 .navbar .nav {
+      width: 50px;
+      height: 2px;
+      border-bottom: 2px solid white;
+      float: right;
+      position: relative;
+      margin: 8px 2px 5px; }
+  .sayfa-1 .navbar.active {
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    right: 600px; }
+  .sayfa-1 .middle {
+    width: 100%; }
+  .sayfa-1 .box-name img {
+    position: absolute;
+    top: 25%;
+    left: 35.5%; }
+  .sayfa-1 .bold-arastir {
+    position: absolute;
+    width: 100%;
+    font-size: 72px;
+    font-weight: bold;
+    color: white;
+    font-family: Montserrat;
+    text-align: center;
+    top: 23%;
+    right: 5%; }
+  .sayfa-1 .slim-ögren {
+    position: absolute;
+    width: 100%;
+    font-size: 72px;
+    color: white;
+    font-family: Montserrat;
+    text-align: center;
+    top: 23%;
+    left: 12%; }
+  .sayfa-1 .middle-2 {
+    width: 100%;
+    height: 68vh;
+    position: relative;
+    top: 600px; }
+    .sayfa-1 .middle-2 .m-left {
+      width: 35%;
+      position: relative;
+      left: 400px; }
+    .sayfa-1 .middle-2 .right-text {
+      position: relative;
+      width: 40%;
+      text-align: center;
+      text-align: left;
+      width: 500px;
+      font-size: 18px;
+      font-family: Montserrat;
+      color: white;
+      float: right;
+      right: 400px;
+      bottom: 645px;
+      line-height: 30px; }
+    .sayfa-1 .middle-2 .m-left img {
+      width: 500px;
+      left: 400px; }
+  .sayfa-1 .mid-3 {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 585px;
+    float: left; }
+  .sayfa-1 .mid-3-left {
+    width: 50%;
+    left: 0; }
+    .sayfa-1 .mid-3-left img {
+      height: 500px;
+      top: 50px;
+      margin-left: 415px; }
+  .sayfa-1 .mid-3-right-text-1 {
+    float: right;
+    width: 450px;
+    color: black;
+    position: relative;
+    bottom: 500px;
+    right: 500px;
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: bold; }
+  .sayfa-1 .mid-3-right-text-2 {
+    width: 600px;
+    float: right;
+    color: black;
+    position: relative;
+    left: 100px;
+    bottom: 370px;
+    font-size: 18px;
+    font-family: Montserrat; }
+
+.bars {
+  margin: 80px 0;
+  font-family: Montserrat;
+  line-height: 40px; }
+  .bars .bar {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #707070;
+    margin-bottom: 100px; }
+    .bars .bar .html {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 0;
+      -webkit-transition: 2s;
+      -o-transition: 2s;
+      transition: 2s;
+      background-color: #12B2F9;
+      line-height: 15px; }
+      .bars .bar .html .yuzde {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        border-radius: 500px;
+        right: 0;
+        top: -10px;
+        -webkit-transform: translateY(-100%) translateX(50%);
+        -ms-transform: translateY(-100%) translateX(50%);
+        transform: translateY(-100%) translateX(50%);
+        background: #12B2F9;
+        color: #fff;
+        text-align: center;
+        width: 58px;
+        padding: 15px; }
+    .bars .bar .css {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 0;
+      -webkit-transition: 2s;
+      -o-transition: 2s;
+      transition: 2s;
+      background-color: #12B2F9;
+      line-height: 15px; }
+      .bars .bar .css .yuzde {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        border-radius: 500px;
+        right: 0;
+        top: -10px;
+        -webkit-transform: translateY(-100%) translateX(50%);
+        -ms-transform: translateY(-100%) translateX(50%);
+        transform: translateY(-100%) translateX(50%);
+        background: #12B2F9;
+        color: #fff;
+        text-align: center;
+        width: 58px;
+        padding: 15px; }
+    .bars .bar .java {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 0;
+      -webkit-transition: 2s;
+      -o-transition: 2s;
+      transition: 2s;
+      background-color: #12B2F9;
+      line-height: 15px; }
+      .bars .bar .java .yuzde {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        border-radius: 500px;
+        right: 0;
+        top: -10px;
+        -webkit-transform: translateY(-100%) translateX(50%);
+        -ms-transform: translateY(-100%) translateX(50%);
+        transform: translateY(-100%) translateX(50%);
+        background: #12B2F9;
+        color: #fff;
+        text-align: center;
+        width: 58px;
+        padding: 15px; }
+    .bars .bar.active .html {
+      width: 75%; }
+    .bars .bar.active .css {
+      width: 70%; }
+    .bars .bar.active .java {
+      width: 10%; }
+    .bars .bar.active .yuzde {
+      opacity: 1; }

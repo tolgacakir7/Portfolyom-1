@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: #1b1e1f;
+    font-family: 'Lato', sans-serif;
+}
+.container
+{
+    height: auto;
+}
+.top
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 50px;
+    height: auto;
+}
+.burgermenu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.menu-btn-burger
+{
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn-burger::before,
+.menu-btn-burger::after
+{
+    content:'';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn-burger::before
+{
+    transform: translateY(-16px);
+}
+.menu-btn-burger::after
+{
+    transform: translateY(16px);
+}
+.burgermenu.open .menu-btn-burger
+{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.burgermenu.open .menu-btn-burger::before
+{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.burgermenu.open .menu-btn-burger::after
+{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+.top .menu-two
+{
+    width: 400px;
+    line-height: 50px;
+    margin-left:5%;
+    
+}
+.top .menu-two li
+{   
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.top .menu-two a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 20px;
+    opacity: .50;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.top .menu-two a:hover
+{
+    opacity: 1;
+}
+.top .logo
+{
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 26px;
+    text-indent: 35%;
+    margin-left: 25%;
+}
+.top .social-media
+{
+    display: flex;
+    flex-direction: row;
+    line-height: 50px;
+    margin-left: 37%;
+    
+}
+.top .social-media a
+{
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 20px;
+    opacity: .5;
+}
+.top .social-media a:hover
+{
+    opacity: 1; 
+}
+.middle
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+.text
+{
+    max-width: 50%;
+    padding: 50px;
+}
+.text h2
+{
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+.text h2 span
+{
+    color: #40c3ff;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.text p
+{
+    max-width:100%;
+    font-size:1.4em;
+    color: #fff;
+    line-height: 1.5em;
+    text-align: left;
+}
+.middle img
+{
+    width: 50%;
+    margin-left: 200px;
+    border-radius: 20px;
+}
+@keyframes suzulme {
+    0%   {margin-top: 0px;}
+    50%   {margin-top: 50px;}
+    100% {margin-top: 0;}
+}
+
+.middle img {
+    animation-name: suzulme;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    box-shadow: 5px 5px 20px#000000;
+}
